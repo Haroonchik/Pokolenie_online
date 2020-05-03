@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+@font-face {
+  font-family: 'Orbitron';
+  src: url("Orbitron.ttf");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  color: white;
+}
+
+.logo {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
+.logo-text {
+  max-height: 4rem;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.motto-section {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.motto-section h2 {
+  font-family: 'Orbitron';
+}
+
+.motto-section p {
+  font-size: 2.5rem;
+}
+
+.bordered {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+}
+
+.button-link {
+  border: 1px solid white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.button-link a {
+  text-decoration: none !important;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.button-link.blinking {
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    border: 1px solid black;
+  }
+  50% {
+    border: 1px solid #818181;
+  }
+  100% {
+    border: 1px solid white;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border: 1px solid black;
+  }
+  50% {
+    border: 1px solid #818181;
+  }
+  100% {
+    border: 1px solid white;
+  }
+}
+
+.button-link:hover, .bordered:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: black;
+}
+
+.toggle-icon {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.right-wrapper {
+  text-align: right;
+}
+
+.d-none {
+  display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+a:not(.anim):after,
+a.anim + p > a:after {
+  display: block;
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFF;
+  content: "";
+  -webkit-transition: width .3s ease-out;
+  transition: width .3s ease-out;
+}
+
+a:hover:after,
+a.anim:hover + p > a:after {
+  width: 100%;
+}
+
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-link p {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+header {
+  width: 100vw;
+}
+
+header nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav ul li {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  float: left;
+}
+
+.toggled {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.toggled .nav-ul {
+  display: block !important;
+}
+
+.toggled li {
+  padding: 2rem 0;
+}
+
+#image-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+#image-section img {
+  width: 50vw;
+}
+
+.about-us {
+  text-align: center;
+  padding: 0;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+.about-us p {
+  padding: 0 3rem;
+}
+
+.about-us img {
+  max-width: 100vw;
+}
+
+.how-to {
+  text-align: center;
+  padding: 5rem;
+  font-size: 2rem;
+}
+
+.grid-action {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+}
+
+.grid-action span {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+img.level-logo {
+  max-width: 200px;
+}
+
+.levels-description .grid-action {
+  width: 80vw;
+  margin: 2rem auto;
+  gap: 20px;
+}
+
+.levels-description .grid-action div {
+  border: 1px solid white;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.levels-description .grid-action div:hover .level-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.levels-description .grid-action .overlines {
+  text-decoration: overline;
+}
+
+.levels-description .grid-action .level-box {
+  position: absolute;
+  width: 100%;
+  background: #000;
+  height: 30vh;
+  border: none;
+  font-size: 1.5rem;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: fade .5s linear forwards;
+          animation: fade .5s linear forwards;
+}
+
+.levels-description .grid-action .about-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.levels-description .grid-action #scratch-box {
+  background-image: url("../img/SCRATCH.PNG");
+}
+
+.levels-description .grid-action #ai-box {
+  background-image: url("https://www.coding-girls.com/sites/default/files/styles/cms_bootstrap_12_12/public/event-images/MIT%20App%20Inventor_0.jpg?itok=FBKxAece");
+}
+
+.levels-description .grid-action #html-box {
+  background-image: url("https://www.francoiacovelli.it/wp-content/uploads/2015/08/HTML5.jpg");
+}
+
+.levels-description .grid-action #css-box {
+  background-image: url("https://hsto.org/webt/qn/nz/3x/qnnz3xb9sbvigez2c97n4hxj5um.jpeg");
+}
+
+.levels-description .grid-action #js-box {
+  background-image: url("https://s3.tproger.ru/uploads/2017/06/javascriptmini2.png");
+}
+
+.levels-description .grid-action #python-box {
+  background-image: url("https://holoborodko.com.ua/wp-content/uploads/python.png");
+}
+
+.non-margin {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+.socials {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.socials + section ul {
+  list-style: none;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 3rem;
+}
+
+.adress li {
+  margin: 2rem 0;
+}
+
+.credits {
+  color: #888;
+}
+
+.top-margin {
+  margin-top: 3rem;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    bottom: -30vh;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    bottom: -30vh;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #image-section > img {
+    width: 150vw;
+    height: 190vw;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .nav-ul li {
+    float: none;
+  }
+  .nav-ul i {
+    display: block;
+  }
+  .motto-section {
+    font-size: 2rem;
+  }
+  .about-us-mobile {
+    display: none;
+  }
+  .level-box {
+    font-size: 1.2rem !important;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .bordered {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .toggle-icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
