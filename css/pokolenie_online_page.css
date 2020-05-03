@@ -35,6 +35,9 @@ p{
   margin-bottom: 0;
 } */
 
+.action_mane{
+  text-align: center;
+}
 
 .list_block {
   position: relative;
