@@ -25,7 +25,7 @@ p{
   margin-bottom: 20px;
 }
 
-.aditinal_text{
+.additional_text{
   font-size: 26px; 
   margin-bottom: 20px; 
   font-weight: bold;
@@ -35,7 +35,8 @@ p{
   margin-bottom: 0;
 } */
 
-.action_mane{
+.action_main{
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -160,6 +161,13 @@ p{
 .skype_img:hover {
   color: lightskyblue;
 }
+
+.skype_img::after{
+  content: "" !important;
+  width: 0 !important;
+}
+
+
 .text_block {
   text-align: center;
   margin: 20px 20px;
@@ -200,14 +208,19 @@ p{
   transition: all 3s ease;
  }
 
-
+ .gradient_text::after{
+      content: "" !important;
+      width: 0 !important;
+ }
 
 
  .action_block{ 
    display: flex; 
    justify-content: space-between; 
-   padding: 35px; 
+   padding: 35px;
    text-align: center;
+   width: 880px;
+   margin: 0 auto;
   
  }
 
@@ -231,7 +244,7 @@ p{
     font-size: 26px; 
   }
   
-  .aditinal_text{
+  .additional_text{
     font-size: 16px; 
   }
 
@@ -239,6 +252,7 @@ p{
 
   .action_block{
     flex-direction: column;
+    justify-content: space-around;
   }
 
   .list_block{
