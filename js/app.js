@@ -16,7 +16,7 @@ particlesJS('particles-js',
   {
     "particles": {
   "number": {
-    "value": 50,
+    "value": 30,
     "density": {
       "enable": true,
       "value_area": 700 // Denser the smaller the number.
@@ -32,7 +32,7 @@ particlesJS('particles-js',
         "color": "#145ea8"
       },
       "polygon": { // if the shape is a polygon
-        "nb_sides": 5
+        "nb_sides": 2
       },
       "image": { // If the shape is an image
         "src": "",
@@ -45,7 +45,7 @@ particlesJS('particles-js',
     "random": true
   },
   "size": {
-    "value": 10,
+    "value": 5,
     "random": true
   },
   "line_linked": {
@@ -53,20 +53,20 @@ particlesJS('particles-js',
     "distance": 200, // The radius before a line is added, the lower the number the more lines.
     "color": "#007ecc",
     "opacity": 0.5,
-    "width": 2
+    "width": 1
   },
   "move": {
     "enable": true,
     "speed": 2,
     "direction": "top", // Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
-    "random": true,
+    "random": false,
     "straight": false, // Whether they'll shift left and right while moving.
     "out_mode": "out", // What it'll do when it reaches the end of the canvas, either "out" or "bounce".
     "bounce": false, 
     "attract": { // Make them start to clump together while moving.
       "enable": true,
       "rotateX": 600,
-      "rotateY": 1200
+      "rotateY": 600
     }
   }
 }
