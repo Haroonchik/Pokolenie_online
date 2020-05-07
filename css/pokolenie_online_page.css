@@ -43,6 +43,17 @@ section {
     flex-direction: row;
     position: relative;
     justify-content: space-between;
+   
+}
+
+.container1 {
+    margin: 40px auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    max-width: 1230px;
 }
 
 .container.column {
@@ -276,7 +287,7 @@ section {
 }
 
 .intro_img img {
-    width: 393px;
+    width: 364px;
 }
 
 .paper {
@@ -294,15 +305,15 @@ section {
 }
 
 .paper.first {
-    background-size: 33%, 33%, 100%, 100%, 100%, 45%;
+    background-size: 32%, 32%, 100%, 100%, 100%, 45%;
 }
 
 .paper.second {
-    background-size: 30.5%, 30.5%, 100%, 100%, 100%, 45%;
+    background-size: 29.5%, 29.5%, 100%, 100%, 100%, 45%;
 }
 
 .paper.third {
-    background-size: 36.5%, 36.5%, 100%, 100%, 100%, 45%;
+    background-size: 35.5%, 35.5%, 100%, 100%, 100%, 45%;
 }
 
 .paper .text_block{
@@ -398,15 +409,15 @@ section {
     }
 
     .paper.first  { 
-        background-size: 14.5%, 14.5%, 100%, 100%, 100%, 45%;
+        background-size: 12.5%, 12.5%, 100%, 100%, 100%, 45%;
       }
 
     .paper.second {  
-        background-size: 9.5%, 9.5%, 100%, 100%, 100%, 45%;
+        background-size: 7.5%, 7.5%, 100%, 100%, 100%, 45%;
     }
 
     .paper.third {  
-        background-size: 21.5%, 21.5%, 100%, 100%, 100%, 45%;
+        background-size: 19.5%, 19.5%, 100%, 100%, 100%, 45%;
      }
 
      .credits_doc{
