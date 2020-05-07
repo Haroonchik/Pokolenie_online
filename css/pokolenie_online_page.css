@@ -6,10 +6,10 @@ p {
     margin: 0;
 }
 
-a:hover:after,
+/* a:hover:after,
 a.anim:hover + p > a:after {
   width: 0%;
-}
+} */
 
 section {
     max-width: 950px;
