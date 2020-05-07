@@ -115,11 +115,15 @@ section {
     width: 155px;
 }
 
-.action_block a:hover {
-    color: rgb(238, 255, 7);
+.action_block a:hover > span{
+    background: linear-gradient(45deg, rgb(120, 2, 255) 13%, rgb(251, 255, 5) 66%, rgb(224, 44, 38));
     font-weight: bold;
     text-decoration: none !important;
     cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     color: #0B2349;
+ 
 }
 
 .action_block a::after {
