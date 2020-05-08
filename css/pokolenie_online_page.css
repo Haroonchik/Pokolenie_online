@@ -49,15 +49,16 @@ section {
 .container1 {
     display: flex;
     flex-direction: row;
-    position: relative;
     justify-content: space-between;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
 }
 
 .container.column {
     flex-direction: column;
     text-align: center;
 }
+
+
 
 .intro_header {
     font-size: 46px;
@@ -226,10 +227,10 @@ section {
 .credits_doc {
     text-align: left;
     list-style: none;
+    padding: 0;
 }
 
 .credits_doc li {
-    margin-bottom: 10px;
     width: 150px;
 }
 
@@ -244,8 +245,10 @@ section {
 
 .contacts{
     list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
+   text-align: center;
+   padding: 0;
+
+  
 }
 
 .contacts li:first-child{
@@ -257,20 +260,22 @@ section {
 .socials{
     list-style-type: none;
     font-size: 2rem;
-    display: inline-block;
     padding: 0;
-    margin: 0 auto;
 }
 
 .socials a {
     margin-right: 15px;
 }
 
+.socials a:last-child {
+    margin-right: 0;
+}
+
 .socials li:first-child {
     font-weight: bold;
     color: white;
     font-size: 16px;
-}
+} 
 
 .intro_text {
     text-align: center;
@@ -458,7 +463,7 @@ section {
 
      .credits_doc{
          padding: 0;
-         margin: 0 auto;
+         margin: 15px 0;
          text-align: center;
      }
 
@@ -479,5 +484,9 @@ section {
 
     .toggled li:first-child {
          padding-bottom: 0;
+    }
+
+    .container1{
+        justify-content: space-around;
     }
 }
