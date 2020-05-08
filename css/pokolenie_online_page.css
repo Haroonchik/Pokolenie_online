@@ -47,13 +47,11 @@ section {
 }
 
 .container1 {
-    margin: 40px auto;
-    margin-bottom: 80px;
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: space-between;
-    max-width: 1230px;
+    flex-wrap: wrap;
 }
 
 .container.column {
@@ -244,6 +242,36 @@ section {
     font-weight: bold;
 }
 
+.contacts{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.contacts li:first-child{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.socials{
+    list-style-type: none;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.socials a {
+    margin-right: 15px;
+}
+
+.socials li:first-child {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
 .intro_text {
     text-align: center;
 }
@@ -373,6 +401,10 @@ section {
 
 .credits{
     margin: 20px auto;
+}
+
+.credits p {
+    margin-top: 15px;
 }
 
 
